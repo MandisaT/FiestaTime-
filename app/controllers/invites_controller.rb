@@ -1,5 +1,5 @@
 class InvitesController < ApplicationController
-  def index
+  		def index
 	 		@event = Event.where(id: params[:event_id]).first
 	 		@invites = @event.invites
 	 		# @events = @user.events
@@ -19,7 +19,8 @@ class InvitesController < ApplicationController
 	end 
 	  
 	  def destroy
-	   Invite.find(params[:id]).destroy
+	   @invite = Invite.find(params[:id])
+	   @invite.destroy
 	   flash[:success] = "Invite deleted"
 	   redirect_to new_invite_path
 	end
@@ -29,7 +30,7 @@ class InvitesController < ApplicationController
 
 	  end 
 	 def create
-	  	@invite= Invite.new(guest_params)
+	  	@invite= Invite.new(invite_params)
 		# creating a new record in the system 
 			if @invite.save
 			# saving the records 

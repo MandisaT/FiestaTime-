@@ -29,6 +29,7 @@ class EventsController < ApplicationController
 	    @invite = Invite.new
 	    @product = Product.new
 	    @total = total(@event)
+	    @wallet = wallet(@event)
 	    date_now = Date.today 
 	    invite = (@event.invites.count)
 	    flash[:alert] = " You have #{invite}  guest  on your list"
@@ -40,7 +41,7 @@ class EventsController < ApplicationController
 	def total(event) 
 		total_cost = 0
 		event.products.each do |product|
-			total_cost += product.price * product.quantity
+		total_cost += product.price * product.quantity
 		end
 		total_cost
 	end 
@@ -50,7 +51,7 @@ class EventsController < ApplicationController
  		redirect_to event_path @event
     end 
 
-	def shopping_cart(event)
+	def wallet(event)
 		remaining_budget = event.budget
 		event.products.each do |product|
 		remaining_budget -= product.price * product.quantity
@@ -75,7 +76,7 @@ class EventsController < ApplicationController
 	def destroy
 	  Event.find(params[:id]).destroy
 	    flash[:success] = "Event deleted"
-		redirect_to  event_path @event
+		redirect_to  new_event_path @event
 	end
 		 
 	private

@@ -34,11 +34,76 @@ li a {
 }
 
 a:hover:not(.active) {
-    background-color: #111;
+    background-color:#0abab5;
 }
 
 h1 { 
 font-family: 'Pacifico', cursive;
   font-weight: 400;
    }
+   h3 { 
+font-family: 'Pacifico', cursive;
+  font-weight: 400;
+   }
+.invite{
+    border-style:solid;
+    color:black;
+    background-color:black;
+    width:400px;
+    height:400px;
+    text-align: center;
+    margin-top: 300px;
+    margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  color:white;
 
+}
+.product{
+     border-style:solid;
+    color:black;
+    background-color:black;
+    width:400px;
+    height:400px;
+    text-align: center;
+    margin-top: 300px;
+    margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  color:white;
+
+}
+.button1{
+    position: relative;
+    background-color: black;
+    color:white;
+    width:200px;
+    height:100px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.button2{
+    position: relative;
+    background-color: black;
+    color:white;
+    width:200px;
+    height:100px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.delete{
+
+}
+.edit{
+
+}
+.showguest{
+
+}
+.showproduct{
+
+}

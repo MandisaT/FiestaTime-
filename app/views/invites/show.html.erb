@@ -1,9 +1,14 @@
-<h1>Invites#show</h1>
-<h1>GuestLists#show</h1>
+<h1>Invites</h1>
+Name:
 	<%= @invite.fname %>
+	<br>
+Last Name :
 	<%= @invite.lname %>
+	<br>
+	Extra Guest :
 	<%= @invite.extra_guest %>
+	<br>
 <h4><%=@invite.dietary_type%></h4>
 <%=link_to  "Edit" ,edit_invite_path(@invite) %>
-<%= link_to "Delete",new_invite_path, method: :delete %>
+<%= link_to "Delete",invite_path, method: :delete %>
 

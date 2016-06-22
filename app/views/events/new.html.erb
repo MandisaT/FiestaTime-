@@ -13,6 +13,7 @@
 	<br>
 	<%=p.text_field :address %>
 	<br>
+		<%=p.hidden_field :event_id, :value => @event.id%>
 	<br>
 	<%=p.label "Budget" %>
 	<br>

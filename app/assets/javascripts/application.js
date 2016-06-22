@@ -14,3 +14,20 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$( document ).ready(function() {
+ $(".invite").hide();
+
+  $(".button1").click(function(){
+        $(".invite").show();
+    });
+       $("#wrapper").click(function(){
+        $("guestform").hide();
+    });
+         $(".product").hide();
+       $(".button2").click(function(){
+        $(".product").show();
+    });
+       $("#wrapper").click(function(){
+        $("productform").hide();
+    });
+});
