@@ -1,0 +1,19 @@
+
+<%@products.each do |f| %>
+<br>
+	Name:<%= f.name %>
+	<br>
+	Price:<%= f.price %>
+	<br>
+	Quantity:<%= f.quantity %>
+	<br>
+<%= link_to "Delete", product_path(f) %>
+<%= link_to "Edit", product_path(f) %>
+<!-- this does not work  -->
+
+	
+<!-- guessing this is how to link the add to shopcart method -->
+<%end %>
+
+
+

@@ -1,0 +1,18 @@
+<h1> not what you wanted you can change that </h1>
+
+<%= form_for @product do |f| %>
+	<%=f.label "name" %>
+	<br>
+	<%=f.text_field :name %>
+	<br>
+	<%=f.label "price" %>
+	<br>
+	<%=f.text_field :price %>
+	<br>
+	<%=f.label "quantity" %>
+	<br>
+	<%=f.text_field :quantity %>
+	<br>
+	<%=f.submit%>
+	<br>
+<%end%>
