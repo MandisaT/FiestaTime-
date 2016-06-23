@@ -1,11 +1,11 @@
-<tr>
-	Event Name:
-<td><h1><%= @event.name %></h1></td>
-Event Date:
-<td><h2><%= @event.date%></h2></td>
-Buget:
-<td><h2>$<%= @event.budget%></h2></td>
 
+<h4 class="lobster">Event Name:</h4>
+<p><%= @event.name %></p>
+<h4 class="lobster">Event Date:</h4>
+<p><%= @event.date%></p>
+<h4 class="lobster">Buget:</h4>
+<p>$<%= @event.budget%></p>
+<br>
 <%= link_to "Delete", event_path, method: :delete %>
 <%=link_to  "Edit" , edit_event_path(@event) %>
 
@@ -19,16 +19,17 @@ Buget:
  <div class = "product"><%= render 'products/product_info' %></div>
 </div>
 </div>
+<div class="hidden">
 <button class="button1"><h3>Create a GuestList</h3> </button>
-<br>
+<div class="showguest"><%=link_to  "Show Guest Your List" , invites_path(:event_id => @event.id), class: 'css_class', style: 'color:#FFFFFF'%></div>
+</div>
 <button class="button2"><h3>Create Items</h3></button>
  <br>
-  <%=link_to  "Show Guest Your List" , invites_path(:event_id => @event.id)%>
+  <div class="showproduct"><%=link_to  "Show Your Products" , products_path(:event_id => @event.id),class: 'css_class', style: 'color:#FFFFFF'%></div>
  <br>
-  <%=link_to  "Show Your Products" , products_path(:event_id => @event.id)%>
- <br>
-<center><h1>Total cost </h1> <h2> $<%= @total %></h2>
-	<center><h1>Remaining Budget </h1> <h2> $<%= @wallet%></h2>
+<p>Total cost  $<%= @total %></p>
+	<p>Remaining Budget $<%= @wallet%></p>
+
 
 
 

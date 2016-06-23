@@ -18,9 +18,11 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+     font-family: Arial, Helvetica, sans-serif;
 }
-
+.sans{
+     font-family: Arial, Helvetica, sans-serif;
+}
 li {
     float: left;
 }
@@ -34,16 +36,26 @@ li a {
 }
 
 a:hover:not(.active) {
-    background-color:#0abab5;
+    background-color:red;
 }
+.c{
+  height:2px;
+  width:2px;
+  background-color: white;
 
-h1 { 
-font-family: 'Pacifico', cursive;
-  font-weight: 400;
+}
+h1.lobster { 
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+   font-size: 400%;
+   text-align: center;
+}
+   .lobster{ 
+      font-family: 'Pacifico', cursive;
+      font-weight: 400;
    }
-   h3 { 
-font-family: 'Pacifico', cursive;
-  font-weight: 400;
+   p{
+      font-family: Arial, Helvetica, sans-serif;
    }
 .invite{
     border-style:solid;
@@ -74,8 +86,20 @@ font-family: 'Pacifico', cursive;
 
 }
 .button1{
-    position: relative;
-    background-color: black;
+   float:right;
+    background-color: #4C4CFF;
+    color:white;
+    width:200px;
+    height:100px;
+    border-radius: 10px;
+    border-color: red;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.button2{
+  float:left;
+    background-color: blue;
     color:white;
     width:200px;
     height:100px;
@@ -83,16 +107,9 @@ font-family: 'Pacifico', cursive;
     cursor: pointer;
     display: inline-block;
 }
+.hidden{
+  overflow: hidden;
 
-.button2{
-    position: relative;
-    background-color: black;
-    color:white;
-    width:200px;
-    height:100px;
-    border-radius: 10px;
-    cursor: pointer;
-    display: inline-block;
 }
 
 .delete{
@@ -102,8 +119,20 @@ font-family: 'Pacifico', cursive;
 
 }
 .showguest{
-
+  display: block;
+  float:right;
+  background-color: #ff6a05;
+  color:white;
+  width:100px;
+  height:50px;
+  border-radius: 10px;
 }
 .showproduct{
-
+  display: block;
+  float:left;
+  background-color: #ff6a05;
+  color:white;
+  width:100px;
+  height:50px;
+  border-radius: 10px;
 }
