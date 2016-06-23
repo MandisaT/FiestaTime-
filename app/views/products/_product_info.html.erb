@@ -1,15 +1,15 @@
-<h1>Product</h1>
+<h2 class ="lobster">Items</h2>
 <%= form_for @product do |f| %>
-	<%=f.label "name" %>
+	<div class="font"><%=f.label "Name" %></div>
 	<br>
 	<%=f.text_field :name %>
 	<br>
-	<%=f.label "price" %>
+	<div class="font"><%=f.label "Price" %></div>
 	<br>
 	<%=f.text_field :price %>
 	
 	<br>
-	<%=f.label "quantity" %>
+	<div class="font"><%=f.label "Quantity" %></div>
 	<br>
 	<%=f.text_field :quantity %>
 	<br>

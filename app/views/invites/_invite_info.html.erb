@@ -1,20 +1,20 @@
-<h1>Invites#new</h1>
+<h2 class="lobster">Invitees</h2>
 <%= form_for @invite do |g| %>
-	<%=g.label "first name" %>
+	<div class="font"><%=g.label "First Name" %></div>
 	<br>
 	<%=g.text_field :fname %>
 	<br>
-	<%=g.label "last name" %>
+	<div class="font"><%=g.label "Last Name" %></div>
 	<br>
 	<%=g.text_field :lname %>
 	<br>
 	<%=g.hidden_field :event_id, :value => @event.id%>
 	<br>
-	<%=g.label "Extra Guest" %>
+	<div class="font"><%=g.label "Extra Guest" %></div>
 	<br>
 	<%=g.text_field :extra_guest %>
 	<br>
-	<%=g.label "Awesome food needs" %>
+	<div class="font"><%=g.label "Awesome food needs" %></div>
 	<br>
 	<%=g.select(:dietary_type, options_for_select([['Gluten-Free','Gluten-Free'],['Pescatarian','Pescatarian'],['Vegan','Vegan'],['Vegetarian','Vegetarian'],['Diabetic','Diabetic'],['Peanut Allergies','Peanut Allergies'],['Lactoce Intolerant','Lactoce Intolerant'],['None','None']])) %>
 	<br>

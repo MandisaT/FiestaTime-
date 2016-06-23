@@ -1,35 +1,42 @@
-
-<h4 class="lobster">Event Name:</h4>
-<p><%= @event.name %></p>
-<h4 class="lobster">Event Date:</h4>
-<p><%= @event.date%></p>
-<h4 class="lobster">Buget:</h4>
-<p>$<%= @event.budget%></p>
-<br>
-<%= link_to "Delete", event_path, method: :delete %>
-<%=link_to  "Edit" , edit_event_path(@event) %>
-
+<table class="center">
+<tr>
+	<div class="bold">
+	<th>Event Name</th>
+	<th> Date</th>
+	<th>Buget</th>
+	<th>Total Cost</th>
+	<th>Remaining Budget</th>
+</div>
 </tr>
 
- <!-- < % = link_to 'create your guest list' ,new_guest_list_path % > -->
- <div class ="wrapper">
- 	<div class ="opbackground">
+<tr>
+<td><%= @event.name %></td>
+<td><%= @event.date%></td>
+<td>$<%= @event.budget%></td>
+<td>Total cost  $<%= @total %></td>
+<td>Remaining Budget $<%= @wallet%></td>
+</tr>
+</table>
+<div class="center"><%= link_to "Delete", event_path, method: :delete %></div>
+<div class="center"><%=link_to  "Edit" , edit_event_path(@event) %></div>
+<!-- <h3 class ="font centertxt total">Total cost  $<%= @total %></h3>
+ -->
+<!--  <h3 class="font centertxt budget">Remaining Budget $<%= @wallet%></h3> -->
+
+ <div class ="wrapper">	
  <div class="invite"><%= render 'invites/invite_info' %></div>
- <br>
+
  <div class = "product"><%= render 'products/product_info' %></div>
 </div>
-</div>
-<div class="hidden">
+
+
 <button class="button1"><h3>Create a GuestList</h3> </button>
-<div class="showguest"><%=link_to  "Show Guest Your List" , invites_path(:event_id => @event.id), class: 'css_class', style: 'color:#FFFFFF'%></div>
-</div>
+<div class=" right"><%=link_to  "Show Guest Your List" , invites_path(:event_id => @event.id), class: 'css_class', style: 'color:#FFFFFF'%></div>
+
 <button class="button2"><h3>Create Items</h3></button>
  <br>
-  <div class="showproduct"><%=link_to  "Show Your Products" , products_path(:event_id => @event.id),class: 'css_class', style: 'color:#FFFFFF'%></div>
+ <%=link_to  "Show Your Products" , products_path(:event_id => @event.id),class: 'css_class', style: 'color:#FFFFFF'%>
  <br>
-<p>Total cost  $<%= @total %></p>
-	<p>Remaining Budget $<%= @wallet%></p>
-
 
 
 

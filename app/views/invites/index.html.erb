@@ -1,4 +1,5 @@
-<h1>Invites#index</h1>
+<div class ="form">
+<h2 class="lobster">Invites</h2>
 <% @invites.each do |g| %>
 <br>
      Name:
@@ -11,4 +12,4 @@
 <%= link_to "Delete", invite_path(g) %>
 <%= link_to "Edit", invite_path(g)%>
 <%end%>
-
+</div>

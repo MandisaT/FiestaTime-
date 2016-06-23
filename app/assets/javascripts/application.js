@@ -30,4 +30,10 @@ $( document ).ready(function() {
        $("#wrapper").click(function(){
         $("productform").hide();
     });
+    // $(".img").hide();  hide img
+
+    // $(".showproduct").hover(function(){
+    //     $(".img").show(); on hover show img 
+    // });
+
 });

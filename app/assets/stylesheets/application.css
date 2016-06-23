@@ -1,18 +1,44 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+
+  body{
+  background-image:url("http://stuartgibbs.com/wp-content/uploads/2015/07/background.jpg");
+  color:white;
+}
+.login{
+    border-style:solid;
+    color:#4C4CFF;
+    background-color:#4C4CFF;
+    width:200px;
+    height:200px;
+    text-align: center;
+   margin:auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+    color:white; 
+}
+
+
+    .form{
+      margin-top: 30px;
+    border-style:solid;
+    color:#4C4CFF;
+    background-color:#4C4CFF;
+    width:400px;
+    height:400px;
+    text-align: center;
+   margin:auto;
+    position: absolute;
+   left: 0; bottom: 0; right: 0;
+    color:white;
+  } 
+
+
+  .logo{
+    float:right;
+    position:relative;
+    bottom: 45px;
+    font-size: 150%;
+
+  }
  ul {
     list-style-type: none;
     margin: 0;
@@ -35,7 +61,7 @@ li a {
     text-decoration: none;
 }
 
-a:hover:not(.active) {
+li:hover:not(.active) {
     background-color:red;
 }
 .c{
@@ -54,27 +80,30 @@ h1.lobster {
       font-family: 'Pacifico', cursive;
       font-weight: 400;
    }
+   .font{
+      font-family: Arial, Helvetica, sans-serif;
+   }
    p{
       font-family: Arial, Helvetica, sans-serif;
    }
 .invite{
     border-style:solid;
     color:black;
-    background-color:black;
+    background-color:#4C4CFF;
     width:400px;
     height:400px;
     text-align: center;
     margin-top: 300px;
     margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-  color:white;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    color:white;
 
 }
 .product{
      border-style:solid;
-    color:black;
-    background-color:black;
+    color:#4C4CFF;
+    background-color:#4C4CFF;
     width:400px;
     height:400px;
     text-align: center;
@@ -85,8 +114,33 @@ h1.lobster {
   color:white;
 
 }
+.center{
+ 
+    text-align:center;
+}
+tr:hover{
+  background-color: red;
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+   font-weight: normal;
+
+}
+  table.center {
+    margin-top: 80px;
+    margin-left:auto; 
+    margin-right:auto;
+  }
+table, td, th {
+    border: 1px solid red;
+    text-align: left;
+}
+
+
 .button1{
-   float:right;
+  margin-top: 10px;
+  position:relative;
+  float:right;
+   right:200px;
     background-color: #4C4CFF;
     color:white;
     width:200px;
@@ -94,24 +148,26 @@ h1.lobster {
     border-radius: 10px;
     border-color: red;
     cursor: pointer;
-    display: inline-block;
 }
 
+
 .button2{
-  float:left;
-    background-color: blue;
+  position:relative;
+  left:325px;
+    border-color: red;
+    background-color:#4C4CFF;
     color:white;
     width:200px;
     height:100px;
     border-radius: 10px;
     cursor: pointer;
-    display: inline-block;
-}
-.hidden{
-  overflow: hidden;
-
+ 
 }
 
+
+.centertxt{
+text-align: center;
+}
 .delete{
 
 }
@@ -119,6 +175,7 @@ h1.lobster {
 
 }
 .showguest{
+
   display: block;
   float:right;
   background-color: #ff6a05;
@@ -130,7 +187,8 @@ h1.lobster {
 .showproduct{
   display: block;
   float:left;
-  background-color: #ff6a05;
+  width:200px;
+  height:200px;:;
   color:white;
   width:100px;
   height:50px;
