@@ -16,20 +16,21 @@
 //= require_tree .
 $( document ).ready(function() {
  $(".invite").hide();
-
   $(".button1").click(function(){
-        $(".invite").show();
+       $(".invite").show();
     });
-       $("#wrapper").click(function(){
-        $("guestform").hide();
-    });
+
+    //    $("#wrapper").click(function(){
+    //     $(".invite").hide();
+    // });
+
          $(".product").hide();
        $(".button2").click(function(){
         $(".product").show();
     });
-       $("#wrapper").click(function(){
-        $("productform").hide();
-    });
+    //    $("#wrapper").click(function(){
+    //     $(".product").hide();
+    // });
     // $(".img").hide();  hide img
 
     // $(".showproduct").hover(function(){

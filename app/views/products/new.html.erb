@@ -1,3 +1,5 @@
+<div  class="inviteshow">
+	<div class="lobster">Create an Item </div>
 <%= form_for @product do |f| %>
 	<%=f.label "name" %>
 	<br>
@@ -11,9 +13,8 @@
 	<%=f.label "quantity" %>
 	<br>
 	<%=f.text_field :quantity %>
-	<br>
-	<%=f.hidden_field :event_id, :value => @event.id %>
-	<br>
+		<br>
 	<%=f.submit%>
 	<br>
 <%end%>
+</div>

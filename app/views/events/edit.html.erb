@@ -1,6 +1,7 @@
+<div class ="inviteshow">
+	<h2 class="lobster">Edit Event</h2>
 <%= form_for @event do |p| %>
 	<%=p.label "Event Name" %>
-	<br>
 	<%=p.text_field :name %>
 	<br>
 	<%=p.label "Date" %>
@@ -10,7 +11,6 @@
 	<%=p.label "Address" %>
 	<br>
 	<%=p.text_field :address %>
-	<br>
 	<br>
 	<%=p.label "Budget" %>
 	<br>
@@ -23,3 +23,4 @@
 	<%=p.submit%>
 
 	<%end%>
+</div>

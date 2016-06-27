@@ -1,3 +1,4 @@
+<div class="inviteshow">
 <h2 class="lobster">Invites</h2>
 <%= form_for @invite do |g| %>
 	<%=g.label "first name" %>
@@ -7,8 +8,6 @@
 	<%=g.label "last name" %>
 	<br>
 	<%=g.text_field :lname %>
-	<br>
-	<%=g.hidden_field :event_id, :value => @event.id%>
 	<br>
 	<%=g.label "Extra Guest" %>
 	<br>
@@ -22,3 +21,4 @@
 	<br>
 <%end%>
 
+</div>

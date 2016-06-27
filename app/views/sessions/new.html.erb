@@ -2,15 +2,15 @@
 <h2 class="lobster">Log in </h2>
 
 <%= form_tag login_path do %>
+<br>
 	<div class="font"><%=label_tag :email %>
-	<%=text_field_tag :email%>
+		<br>
+	<%=text_field_tag :email %>
 	<br>
 	<div class="font"><%=label_tag :password %>
+		<br>
 	<%=password_field_tag :password %>
-	<br>
 	<div class="font"><%=submit_tag  :login%>
-	<br>
-
 <%end%>
 
 </div>

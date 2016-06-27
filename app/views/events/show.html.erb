@@ -1,42 +1,42 @@
+<div class="wrapper">
 <table class="center">
 <tr>
-	<div class="bold">
+	<center><h3 class="font event">Your Event Details</h3>
 	<th>Event Name</th>
 	<th> Date</th>
 	<th>Buget</th>
 	<th>Total Cost</th>
 	<th>Remaining Budget</th>
-</div>
 </tr>
 
 <tr>
 <td><%= @event.name %></td>
 <td><%= @event.date%></td>
 <td>$<%= @event.budget%></td>
-<td>Total cost  $<%= @total %></td>
-<td>Remaining Budget $<%= @wallet%></td>
+<td> $<%= @total %></td>
+<td> $<%= @wallet%></td>
 </tr>
 </table>
-<div class="center"><%= link_to "Delete", event_path, method: :delete %></div>
-<div class="center"><%=link_to  "Edit" , edit_event_path(@event) %></div>
-<!-- <h3 class ="font centertxt total">Total cost  $<%= @total %></h3>
- -->
-<!--  <h3 class="font centertxt budget">Remaining Budget $<%= @wallet%></h3> -->
+ 
+<%= link_to "Delete", event_path, method: :delete ,class: 'css_class', style: 'color:#FFFFFF'%>
 
- <div class ="wrapper">	
- <div class="invite"><%= render 'invites/invite_info' %></div>
+<%=link_to  "Edit" , edit_event_path(@event),class: 'css_class', style: 'color:#FFFFFF'%>
+
+ <div class="invite"><%= render 'invites/invite_info' %>
+ </div>
+
 
  <div class = "product"><%= render 'products/product_info' %></div>
-</div>
+
 
 
 <button class="button1"><h3>Create a GuestList</h3> </button>
-<div class=" right"><%=link_to  "Show Guest Your List" , invites_path(:event_id => @event.id), class: 'css_class', style: 'color:#FFFFFF'%></div>
+<div class=" showguest"><%=link_to  "Show Guest Your List" , invites_path(:event_id => @event.id), class: 'css_class', style: 'color:#FFFFFF'%></div>
 
 <button class="button2"><h3>Create Items</h3></button>
  <br>
- <%=link_to  "Show Your Products" , products_path(:event_id => @event.id),class: 'css_class', style: 'color:#FFFFFF'%>
- <br>
+ <div class="showinvite"><%=link_to  "Show Your Products" , products_path(:event_id => @event.id),class: 'css_class', style: 'color:#FFFFFF'%></div>
 
+</div>
 
 

@@ -59,19 +59,6 @@ class EventsController < ApplicationController
  		remaining_budget
 	end
 	
-	# def days_until (event_date)
-	# 	now = Date.current_user
-	# 	event_date = now.year - event.year
-	# 	event_date = now.day - event.day 
-	# end 
-	
-	# def days_until_party(event_date)
-	# 	now = Time.now.to_date
-	# 	now.year - event_date.date - ((now.month > event_date.date || (now.month == event.date && now.day)))
-	# end 
-	# def future
-	# 	day.future
- #    end 
 	
 	def destroy
 	  Event.find(params[:id]).destroy
