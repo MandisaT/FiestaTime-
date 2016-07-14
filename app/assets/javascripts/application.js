@@ -36,5 +36,23 @@ $( document ).ready(function() {
     // $(".showproduct").hover(function(){
     //     $(".img").show(); on hover show img 
     // });
+$(".tooltip").hide();
+$(".button2").hover(function(){
+$(".tooltip").show();
 
+    });
+
+ $(".button2").click(function(){
+        $(".tooltip").toggle();
+    });
+
+$(".tooltip2").hide();
+$(".button1").hover(function(){
+$(".tooltip2").show();
+
+    });
+ $(".button1").click(function(){
+        $(".tooltip2").toggle();
+    });
+  
 });

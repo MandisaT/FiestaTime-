@@ -2,6 +2,7 @@
 <table class="center">
 <tr>
 	<center><h3 class="font event">Your Event Details</h3>
+
 	<th>Event Name</th>
 	<th> Date</th>
 	<th>Buget</th>
@@ -28,11 +29,11 @@
 
  <div class = "product"><%= render 'products/product_info' %></div>
 
-
-
+<p title="in items needed for your event" class="tooltip">Create needed items to calculate party cost.</p>
 <button class="button1"><h3>Create a GuestList</h3> </button>
 <div class=" showguest"><%=link_to  "Show Guest Your List" , invites_path(:event_id => @event.id), class: 'css_class', style: 'color:#FFFFFF'%></div>
 
+<p title="in items needed for your event" class="tooltip2">Add guest to calculate attendees.</p>
 <button class="button2"><h3>Create Items</h3></button>
  <br>
  <div class="showinvite"><%=link_to  "Show Your Products" , products_path(:event_id => @event.id),class: 'css_class', style: 'color:#FFFFFF'%></div>
